@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+.heading {
+  text-align: center;
+  margin: 1rem;
+}
+
+.entire-calculator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator-layout {
+  width: 450px;
+  height: 650px;
+  border: 1px solid black;
+  background: antiquewhite;
+  border-radius: 1rem;
+}
+
+.calculator-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.cal-displayer {
+  width: 400px;
+  height: 50px;
+  font-size: 1.5rem;
+  text-align: end;
+  outline: none;
+  background: aliceblue;
+  border-radius: 1rem;
+}
+
+.cal-displayer::placeholder {
+  margin-right: 1rem;
+}
+
+.calculator-digits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.cal-each-digit,
+.operator,
+.equal-to,
+.all-clear-digit,
+.clear-digit {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cal-each-digit {
+  background-color: gray;
+  border: none;
+  color: white;
+}
+
+.operator,
+.equal-to {
+  background-color: orange;
+  border: none;
+}
+
+.all-clear-digit,
+.clear-digit {
+  border: none;
+  background-color: darkgray;
+  color: white;
+}
